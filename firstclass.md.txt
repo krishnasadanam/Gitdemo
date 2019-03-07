@@ -1,0 +1,38 @@
+This is my fiest lesson of "How to push a project file to a remote or online repo"
+   
+
+First step: Is to open the gitcmd.
+Second step: Create a directory or folder
+
+"C:\Users\welcome>md gitdemo"
+
+Third step:Change the directory.
+
+"C:\Users\welcome>cd gitdemo".
+  
+Fourth step:Initialize the directory (Git repo)
+"C:\Users\welcome\gitdemo>git init"
+Initialized empty git repostiory and the "path" will be displayed.
+ 
+Fifth step: Create a file and save it with .md exetension.
+
+Sixth step: Check the status of the git repo.
+
+Seventh step: Add the git with the valid file name or add by using . by using this method all the files in 
+the directory will be included.
+
+"git add."
+
+Eight step: Configure the local repo to online repo
+
+git config user.name"".
+git config user.email"".
+
+
+Nine step: commit ur file.
+"git commit-m " ""
+ 
+
+Tenth step : added to ur profile.
+
+
