@@ -1,0 +1,23 @@
+<html>
+<script>
+        function reverse()
+		{
+		var a,no,b,temp=0;
+
+		no=Number(document.getElementById("rev").value);
+
+		b=no;
+		while(no>0)
+		{
+		a=no%10;
+		no=parseInt(no/10);
+		temp=temp*10+a;
+		}
+alert(temp);
+}
+</script>
+<body>
+Enter any Number: <input id="rev">
+<button onclick="reverse()">Reverse</button>
+</body>
+</html>
