@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<body>
+		Enter the number to be reversed<input id="reverse">
+		<br>
+		Reversed number<input id="result">
+		<button onclick="revNumber()">Reverse</button>
+<script>
+		function revNumber()
+		{
+		number1=document.getElementById("reverse").value;
+		var res="";
+		for(var i=number1.length-1;i>=0;i--){
+		res +=number1[i];
+		document.getElementById("result").value=res;
+		}
+	
+		}
+</script>
+</body>
+</html>
