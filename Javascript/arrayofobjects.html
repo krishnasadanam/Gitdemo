@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<body>
+			
+			<script>
+					var studentdetail=[];
+					var studentName = "";
+					var studentAge = "";
+					function pushed()
+					{
+						studentname = document.getElementById("sname").value;
+						studentage = document.getElementById("age").value;
+
+						var person ={
+									Name : studentname,
+									Age : studentage
+									};
+						studentdetail.push(person);
+					//	alert(person.Name);
+					//	alert(person.Age);
+					
+					}
+						
+					function display()
+					{
+				//	alert(studentdetail.length);
+				for(let i=0;i<studentdetail.length;i++)
+				{
+				//	studentName+=studentdetail[i].Name;
+				//	studentAge+=studentdetail[i].Age;
+					console.log(studentdetail);
+					
+					var el = document.getElementById('solution');
+
+					trChild = document.createElement('tr');
+
+					// Give the new div some content
+					trChild.innerHTML = "<td style='border: 1px solid blck;'>"+studentdetail[i].Name+"</td><td>"+studentdetail[i].Age+"</td>";
+
+					// Jug it into the parent element
+
+					//document.getElementById("solution").innerHTML = "<tr><td>"+studentdetail[i].Name+"</td><td>"+studentdetail[i].Age+"</td></tr>";
+					
+				}
+									el.appendChild(trChild);
+					}
+						
+				
+					
+					
+			</script>
+			
+			Enter the name<input id="sname"><br>
+			<br>Enter the age<input id="age"><br>
+			<table id="solution" style="border: 1px solid black">
+			</table>
+			</p>
+			<button onclick ="pushed()">Push
+			<button onclick ="display()">Display
+			
+	</body>
+</html>
