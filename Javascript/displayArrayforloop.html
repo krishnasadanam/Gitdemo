@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display Array</title>
+    <script>
+      var studentDetails=[];
+      var student="";
+      function arrayPush()
+      {
+            rno=document.getElementById("rollno").value;
+            name=document.getElementById("name").value;
+          var info={
+                      Rollno:rno,
+                      Name : name
+
+                    };
+
+            studentDetails.push(info);
+            //alert(info.Rollno);
+            //alert(info.Name);
+            //alert(studentDetails[0].Name+" "+studentDetails[0].Rollno);
+        }
+
+      function arrayDisplay()
+      {
+        //alert(studentDetails.length);
+        //alert(studentDetails[0].Name);
+
+            for(let i=0;i<studentDetails.length;i++)
+              {
+
+                   student+=studentDetails[i].Name+"      ";
+                    student+=studentDetails[i].Rollno;
+                    document.getElementById("insert").innerHTML=student;
+                    //document.getElementById("insert").innerHTML=studentDetails.length;
+                    //alert(studentDetails[i].Name);
+                    //var tb = document.getElementById("insert");
+                    //var tr= document.createElement('tr');
+                    //tr.innerHTML="<td style='border:1px solid black '>"+studentDetails[i].Name+"</td><td style='border:1px solid black '>"+studentDetails[i].Rollno+"</td>";
+
+              }
+              //tb.appendChild(tr);
+      }
+    </script>
+  </head>
+  <body>
+
+
+
+      <input type="text" name="" value="" id="rollno"><br><br>
+    <input type="text" name="" value="" id="name"><br><br>
+    <button type="button" name="button" onclick="arrayPush()">insert </button>
+  <br><br> <p>values in the list</p>
+<p id="insert"></p>
+
+    <br><button type="button" name="button"onclick="arrayDisplay()">Display</button><br>
+
+  </body>
+</html>
